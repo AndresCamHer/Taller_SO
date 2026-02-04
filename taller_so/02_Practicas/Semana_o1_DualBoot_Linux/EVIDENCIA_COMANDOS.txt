@@ -1,0 +1,128 @@
+# Evidencia Semana 01 — Arranque dual + Linux en Consola
+
+## Parte A — Instalación 
+- **GRUB:** Ver captura `grub.jpeg`.  
+  **¿Qué aprendí?** Que GRUB es el menú que aparece al encender la computadora y me deja elegir entre Windows y Ubuntu.
+- **Terminal en Ubuntu:** Ver captura `terminal_uname_lsblk.jpeg`.  
+  **¿Qué aprendí?** Que al iniciar Ubuntu puedo usar la terminal para controlar todo el sistema.
+
+---
+
+## Parte B — Práctica en la Terminal
+
+### 1) Identidad del sistema
+#### Comando: whoami
+**¿Qué hace?** Muestra el usuario actual.  
+**Salida en mi equipo:**  
+```txt
+-----------------------
+¿Qué aprendí? Que estoy trabajando con mi usuario de Ubuntu.
+
+Comando: id
+¿Qué hace? Muestra el ID del usuario y grupos.
+¿Qué aprendí? Que cada usuario tiene un número único y pertenece a grupos.
+
+Comando: hostname
+¿Qué hace? Muestra el nombre de la computadora.
+¿Qué aprendí? Que mi laptop tiene un nombre dentro de la red.
+
+Comando: uname -a
+¿Qué hace? Muestra toda la info del kernel y sistema.
+¿Qué aprendí? Que mi Ubuntu corre en 64 bits y sé la versión exacta del kernel.
+
+Comando: uname -r
+¿Qué hace? Muestra solo la versión del kernel.
+¿Qué aprendí? Que puedo identificar la versión sin tanto detalle.
+
+Comando: lsb_release -a
+¿Qué hace? Muestra la versión de Ubuntu instalada.
+¿Qué aprendí? Que estoy usando Ubuntu 24.04 (ejemplo).
+
+Comando: date
+¿Qué hace? Muestra la fecha y hora.
+¿Qué aprendí? Que el sistema siempre sabe la hora exacta.
+
+Comando: uptime
+¿Qué hace? Muestra cuánto tiempo lleva encendido el sistema.
+¿Qué aprendí? Que puedo saber si mi compu lleva horas o minutos encendida.
+
+2) Navegación y archivos
+Comando: pwd
+¿Qué hace? Muestra la ruta actual.
+¿Qué aprendí? Que siempre sé en qué carpeta estoy.
+
+Comando: ls, ls -l, ls -la
+¿Qué hace? Lista archivos y carpetas (con detalles y ocultos).
+¿Qué aprendí? Que puedo ver permisos, dueños y archivos ocultos.
+
+Comando: cd /, cd ~, cd -
+¿Qué hace? Cambia de carpeta (raíz, home, anterior).
+¿Qué aprendí? Que puedo moverme rápido entre directorios.
+
+Comando: mkdir, mkdir -p
+¿Qué hace? Crea carpetas (simples o anidadas).
+¿Qué aprendí? Que puedo organizar mis archivos en estructuras.
+
+Comando: touch
+¿Qué hace? Crea archivos vacíos.
+¿Qué aprendí? Que puedo generar archivos de prueba fácilmente.
+
+Comando: cp, mv, rm, rmdir
+¿Qué hace? Copiar, mover/renombrar, borrar archivos y carpetas.
+¿Qué aprendí? Que controlo totalmente mis archivos desde la terminal.
+
+3) Ver contenido y editar
+Comando: echo "Hola Linux" > saludo.txt
+¿Qué hace? Escribe texto en un archivo.
+¿Qué aprendí? Que puedo crear contenido directo desde la terminal.
+
+Comando: cat, head, tail
+¿Qué hace? Muestra archivos completos o solo partes.
+¿Qué aprendí? Que puedo leer archivos sin abrir programas.
+
+Comando: less
+¿Qué hace? Permite navegar dentro de un archivo largo.
+¿Qué aprendí? Que puedo explorar archivos grandes cómodamente.
+
+Comando: nano
+¿Qué hace? Editor de texto en terminal.
+¿Qué aprendí? Que puedo escribir notas sin salir de la consola.
+
+4) Buscar cosas
+Comando: find
+¿Qué hace? Busca archivos en carpetas.
+¿Qué aprendí? Que puedo localizar cualquier archivo en mi home.
+
+Comando: grep
+¿Qué hace? Busca texto dentro de archivos.
+¿Qué aprendí? Que puedo encontrar usuarios o palabras clave en archivos del sistema.
+
+5) Discos y particiones
+Comando: lsblk, blkid, df -h, du -sh ~, mount, cat /etc/fstab
+¿Qué hace? Muestra discos, particiones y espacio usado.
+¿Qué aprendí? Que mi disco está dividido en varias particiones y Ubuntu está montado junto a Windows.
+
+6) Procesos
+Comando: ps, ps aux, top, htop
+¿Qué hace? Muestra procesos activos.
+¿Qué aprendí? Que puedo ver qué programas están corriendo y cuánta memoria usan.
+
+7) Permisos
+Comando: ls -l, chmod, stat
+¿Qué hace? Muestra y cambia permisos de archivos.
+¿Qué aprendí? Que Linux controla quién puede leer, escribir o ejecutar cada archivo.
+
+8) Ayuda y manuales
+Comando: man, --help
+¿Qué hace? Muestra manuales y ayuda de comandos.
+¿Qué aprendí? Que siempre puedo consultar la documentación desde la terminal sin internet.
+
+Parte C — Capturas
+capturas/grub.jpeg
+
+capturas/terminal_uname_lsblk.jpeg
+
+Otras capturas: captura1.jpeg, captura2.jpeg, etc.
+
+-----Conclusión-----
+Aprendí a moverme en la terminal, crear y manipular archivos, buscar información, revisar discos y procesos, cambiar permisos y usar la ayuda integrada. Además comprobé que mi Ubuntu está instalado en arranque dual junto a Windows.
