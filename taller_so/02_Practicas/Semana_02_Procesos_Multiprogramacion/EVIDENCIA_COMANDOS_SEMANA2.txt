@@ -1,0 +1,55 @@
+Evidencia Semana 02 — Procesos, multiprogramación y control del sistema
+Observación de procesos
+Comando: ps
+¿Qué hace? Muestra los procesos activos del usuario actual.
+¿Qué aprendí? Que puedo ver qué programas están corriendo en mi sesión.
+Captura: capturas/terminal_ps.png
+
+Comando: ps aux
+¿Qué hace? Lista todos los procesos del sistema con detalles.
+¿Qué aprendí? Que puedo ver procesos de todos los usuarios y su consumo de recursos.
+Captura: capturas/terminal_ps.png
+
+Comando: top
+¿Qué hace? Muestra procesos en tiempo real.
+¿Qué aprendí? Que puedo observar el consumo de CPU y memoria en vivo.
+Captura: capturas/terminal_top.png
+
+Experimento de multiprogramación
+Acción: Abrí dos terminales, en una ejecuté top y en otra nano archivo_prueba.txt.
+Observación: Al abrir nano, apareció un nuevo proceso en top. Al cerrarlo, desapareció.
+¿Qué aprendí? Que cada programa que ejecuto es un proceso y el sistema los maneja en paralelo.
+Captura: capturas/terminal_top_nano.png
+
+Permisos básicos
+Comando: ls -l
+¿Qué hace? Muestra permisos y detalles de archivos.
+Captura: capturas/ls-l.png
+
+Comando: chmod 700 saludo.txt
+¿Qué hace? Da permisos solo al dueño.
+
+Comando: chmod 644 saludo.txt
+¿Qué hace? Permite lectura a todos, escritura solo al dueño.
+
+Comando: stat saludo.txt
+¿Qué hace? Muestra detalles completos del archivo.
+Captura: capturas/permisos.png
+
+Ayuda y manuales
+Comando: man ls
+¿Qué hace? Muestra el manual del comando ls.
+
+Comando: ls --help
+¿Qué hace? Muestra ayuda rápida.
+
+Comando: man chmod
+¿Qué hace? Manual de chmod.
+
+Comando: man find
+¿Qué hace? Manual de find.
+
+Captura: capturas/man.png
+
+Conclusión
+Aprendí a observar procesos en Linux, comprobar cómo funciona la multiprogramación y reforcé el uso de permisos y manuales. Ahora entiendo que cada programa que ejecuto es un proceso y que el sistema operativo los administra en paralelo.
