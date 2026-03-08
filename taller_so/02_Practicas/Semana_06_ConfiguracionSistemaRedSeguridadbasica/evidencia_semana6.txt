@@ -1,0 +1,234 @@
+Script iniciado en 2026-03-08 15:51:09-06:00 [TERM="linux" TTY="/dev/tty3" COLUMNS="240" LINES="67"]
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ tty
+[?2004l/dev/pts/0
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ ip a
+[?2004l1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
+    link/ether 30:13:8b:84:2f:72 brd ff:ff:ff:ff:ff:ff
+    altname enp2s0
+3: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 94:bb:43:26:22:50 brd ff:ff:ff:ff:ff:ff
+    altname wlp4s0
+    inet 192.168.1.73/24 brd 192.168.1.255 scope global dynamic noprefixroute wlo1
+       valid_lft 86260sec preferred_lft 86260sec
+    inet6 2806:108e:27:3279:bf3a:684d:1196:489a/64 scope global temporary dynamic 
+       valid_lft 86259sec preferred_lft 85944sec
+    inet6 2806:108e:27:3279:16bb:d96c:564:3748/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86259sec preferred_lft 86259sec
+    inet6 fe80::4846:7827:2c2b:5950/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ up[K[Kip route
+[?2004ldefault via 192.168.1.254 dev wlo1 proto dhcp src 192.168.1.73 metric 600 
+192.168.1.0/24 dev wlo1 proto kernel scope link src 192.168.1.73 metric 600 
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ ping 8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=81.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=103 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=124 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=147 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=170 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=87.8 ms
+^C
+--- 8.8.8.8 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5011ms
+rtt min/avg/max/mdev = 81.369/118.711/169.764/31.692 ms
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo adduser tecnico1
+[?2004l[sudo] contraseña para ach: 
+info: Añadiendo el usuario `tecnico1' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Añadiendo el nuevo grupo `tecnico1' (1001) ...
+info: Adding new user `tecnico1' (1001) with group `tecnico1 (1001)' ...
+info: Creando el directorio personal `/home/tecnico1' ...
+info: Copiando los ficheros desde `/etc/skel' ...
+Nueva contraseña: 
+CONTRASEÑA INCORRECTA: La contraseña tiene menos de 8 caracteres
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+Cambiando la información de usuario para tecnico1
+Introduzca el nuevo valor, o presione INTRO para el predeterminado
+	Nombre completo []: tecnico1
+	Número de habitación []: 1
+	Teléfono del trabajo []: 1
+	Teléfono de casa []: 1
+	Otro []: 1
+¿Es correcta la información? [S/n] s
+info: Adding new user `tecnico1' to supplemental / extra groups `users' ...
+info: Añadiendo al usuario `tecnico1' al grupo `users' ...
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo adduser tecnico1[K2
+[?2004linfo: Añadiendo el usuario `tecnico2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Añadiendo el nuevo grupo `tecnico2' (1002) ...
+info: Adding new user `tecnico2' (1002) with group `tecnico2 (1002)' ...
+info: Creando el directorio personal `/home/tecnico2' ...
+info: Copiando los ficheros desde `/etc/skel' ...
+Nueva contraseña: 
+CONTRASEÑA INCORRECTA: La contraseña tiene menos de 8 caracteres
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+Cambiando la información de usuario para tecnico2
+Introduzca el nuevo valor, o presione INTRO para el predeterminado
+	Nombre completo []: tecnico2
+	Número de habitación []: 2
+	Teléfono del trabajo []: 22 
+	Teléfono de casa []: 2
+	Otro []: 2
+¿Es correcta la información? [S/n] s
+info: Adding new user `tecnico2' to supplemental / extra groups `users' ...
+info: Añadiendo al usuario `tecnico2' al grupo `users' ...
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo grupoadd soporte
+[?2004lsudo: grupoadd: orden no encontrada
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo groupadd soporte
+[?2004l[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo usermod -aG soporte tecnico1
+[?2004l[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo usermod -aG soporte tecnico1[K2
+[?2004l[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ groups tecnico1
+[?2004ltecnico1 : tecnico1 users soporte
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ groups tecnico1[K2
+[?2004ltecnico2 : tecnico2 users soporte
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo ,ldor /so[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo mkdir /soporte
+[?2004lmkdir: no se puede crear el directorio «/soporte»: El archivo ya existe
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo chown :sioir[K[K[K[Koporte /soporte
+[?2004l[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ ls _ld /soporte
+[?2004lls: no se puede acceder a '_ld': No existe el archivo o el directorio
+/soporte:
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo apt update
+[?2004l[33m0% [Trabajando][0m[33m0% [Conectado a dl.google.com (2607:f8b0:4012:827::200e)] [Conectando a archive.ubuntu.com (91.189.92.22)] [Conectando a security.ubuntu.com (91.189.91.82)][0m                                                                                                                                                            Obj:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+[33m                                                                                                                                                            0% [Esperando las cabeceras] [Esperando las cabeceras][0m                                                      Obj:2 http://archive.ubuntu.com/ubuntu noble InRelease
+[33m0% [Esperando las cabeceras] [Esperando las cabeceras][0m                                                      Obj:3 https://dl.google.com/linux/chrome/deb stable InRelease
+[33m                                                      0% [Esperando las cabeceras][0m[33m0% [Esperando las cabeceras][0m[33m0% [Esperando las cabeceras][0m                            Obj:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+[33m                            0% [Trabajando][0m[33m0% [Esperando las cabeceras][0m[33m0% [Esperando las cabeceras][0m                            Obj:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+[33m                            0% [Trabajando][0m[33m20% [Trabajando][0m                Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 2%Leyendo lista de paquetes... 2%Leyendo lista de paquetes... 3%Leyendo lista de paquetes... 3%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 5%Leyendo lista de paquetes... 11%Leyendo lista de paquetes... 23%Leyendo lista de paquetes... 34%Leyendo lista de paquetes... 35%Leyendo lista de paquetes... 35%Leyendo lista de paquetes... 39%Leyendo lista de paquetes... 39%Leyendo lista de paquetes... 43%Leyendo lista de paquetes... 52%Leyendo lista de paquetes... 52%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 53%Leyendo lista de paquetes... 54%Leyendo lista de paquetes... 57%Leyendo lista de paquetes... 57%Leyendo lista de paquetes... 60%Leyendo lista de paquetes... 60%Leyendo lista de paquetes... 65%Leyendo lista de paquetes... 67%Leyendo lista de paquetes... 67%Leyendo lista de paquetes... 72%Leyendo lista de paquetes... 72%Leyendo lista de paquetes... 76%Leyendo lista de paquetes... 76%Leyendo lista de paquetes... 76%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 78%Leyendo lista de paquetes... 81%Leyendo lista de paquetes... 81%Leyendo lista de paquetes... 84%Leyendo lista de paquetes... 84%Leyendo lista de paquetes... 87%Leyendo lista de paquetes... 90%Leyendo lista de paquetes... 90%Leyendo lista de paquetes... 95%Leyendo lista de paquetes... 95%Leyendo lista de paquetes... 98%Leyendo lista de paquetes... 98%Leyendo lista de paquetes... 98%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... 99%Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%Creando árbol de dependencias... Hecho
+Leyendo la información de estado... 0%Leyendo la información de estado... 0%Leyendo la información de estado... Hecho
+Se pueden actualizar 2 paquetes. Ejecute «apt list --upgradable» para verlos.
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo apt upgrade -y
+[?2004lLeyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%Creando árbol de dependencias... Hecho
+Leyendo la información de estado... 0%Leyendo la información de estado... 0%Leyendo la información de estado... Hecho
+Calculando la actualización... 0%Calculando la actualización... 10%Calculando la actualización... Hecho
+El paquete indicado a continuación se instaló de forma automática y ya no es necesario.
+  libllvm19
+Utilice «sudo apt autoremove» para eliminarlo.
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+  libzvbi-common libcjson1 libpostproc57 libavcodec60
+  libgstreamer-plugins-bad1.0-0 libzvbi0t64 libavutil58 libswscale7
+  libswresample4 libavformat60 libavfilter9
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+Las siguientes actualizaciones se han retenido debido a actualizaciones paulatinas (phasing):
+  network-manager-openvpn network-manager-openvpn-gnome
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 2 no actualizados.
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo apt install ufw -y
+[?2004lLeyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%Creando árbol de dependencias... Hecho
+Leyendo la información de estado... 0%Leyendo la información de estado... 0%Leyendo la información de estado... Hecho
+ufw ya está en su versión más reciente (0.36.2-6).
+El paquete indicado a continuación se instaló de forma automática y ya no es necesario.
+  libllvm19
+Utilice «sudo apt autoremove» para eliminarlo.
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 2 no actualizados.
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo ufw allow ssh
+[?2004lOmitiendo adición de regla ya existente
+Omitiendo adición de regla ya existente (v6)
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudow ufs [K[Kw allow 80/tcp
+[?2004lOrden «sudow» no encontrada. Quizá quiso decir:
+  la orden «sudo» del paquete deb «sudo (1.9.15p5-3ubuntu5.24.04.1)»
+  la orden «sudo» del paquete deb «sudo-ldap (1.9.15p5-3ubuntu5.24.04.1)»
+Pruebe con: sudo apt install <nombre del paquete deb>
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo ufw deny 23
+[?2004lOmitiendo adición de regla ya existente
+Omitiendo adición de regla ya existente (v6)
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo ufqw [K[K[Kw status numbered
+[?2004lEstado: inactivo
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ sudo ss -tulnp
+[?2004lNetid             State              Recv-Q             Send-Q                                              Local Address:Port                            Peer Address:Port             Process                                                 
+udp               UNCONN             0                  0                                                         0.0.0.0:5353                                 0.0.0.0:*                 users:(("avahi-daemon",pid=1231,fd=12))                
+udp               UNCONN             0                  0                                                         0.0.0.0:56891                                0.0.0.0:*                 users:(("avahi-daemon",pid=1231,fd=14))                
+udp               UNCONN             0                  0                                                      127.0.0.54:53                                   0.0.0.0:*                 users:(("systemd-resolve",pid=1091,fd=16))             
+udp               UNCONN             0                  0                                                   127.0.0.53%lo:53                                   0.0.0.0:*                 users:(("systemd-resolve",pid=1091,fd=14))             
+udp               UNCONN             0                  0                                                            [::]:5353                                    [::]:*                 users:(("avahi-daemon",pid=1231,fd=13))                
+udp               UNCONN             0                  0                                [fe80::4846:7827:2c2b:5950]%wlo1:546                                     [::]:*                 users:(("NetworkManager",pid=1371,fd=24))              
+udp               UNCONN             0                  0                                                            [::]:42077                                   [::]:*                 users:(("avahi-daemon",pid=1231,fd=15))                
+tcp               LISTEN             0                  4096                                                127.0.0.53%lo:53                                   0.0.0.0:*                 users:(("systemd-resolve",pid=1091,fd=15))             
+tcp               LISTEN             0                  4096                                                    127.0.0.1:631                                  0.0.0.0:*                 users:(("cupsd",pid=1647,fd=7))                        
+tcp               LISTEN             0                  4096                                                   127.0.0.54:53                                   0.0.0.0:*                 users:(("systemd-resolve",pid=1091,fd=17))             
+tcp               LISTEN             0                  4096                                                        [::1]:631                                     [::]:*                 users:(("cupsd",pid=1647,fd=6))                        
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ tio[K[Kop
+[?2004l[?25l[?1c[H[J[mtop - 15:56:13 up 8 min,  2 users,  load average: 0,31, 1,01, 0,80[m[39;49m[m[39;49m[K
+Tareas:[m[39;49m[1m 355 [m[39;49mtotal,[m[39;49m[1m   1 [m[39;49mejecutar, [m[39;49m[1m 354 [m[39;49mhibernar, [m[39;49m[1m   0 [m[39;49mdetener, [m[39;49m[1m   0 [m[39;49mzombie[m[39;49m[m[39;49m[K
+%Cpu(s):[m[39;49m[1m  0,6 [m[39;49mus,[m[39;49m[1m  0,6 [m[39;49msy,[m[39;49m[1m  0,0 [m[39;49mni,[m[39;49m[1m 97,5 [m[39;49mid,[m[39;49m[1m  1,2 [m[39;49mwa,[m[39;49m[1m  0,0 [m[39;49mhi,[m[39;49m[1m  0,0 [m[39;49msi,[m[39;49m[1m  0,0 [m[39;49mst[m[39;49m[m [m[39;49m[m[39;49m[K
+MiB Mem :[m[39;49m[1m  15209,2 [m[39;49mtotal,[m[39;49m[1m  11800,7 [m[39;49mlibre,[m[39;49m[1m   2031,1 [m[39;49musado,[m[39;49m[1m   1658,8 [m[39;49mbúf/caché[m[39;49m[m [m[39;49m[m    [m[39;49m[m[39;49m[K
+MiB Intercambio:[m[39;49m[1m   7630,0 [m[39;49mtotal,[m[39;49m[1m   7630,0 [m[39;49mlibre,[m[39;49m[1m      0,0 [m[39;49musado.[m[39;49m[1m  13178,1 [m[39;49mdispon Mem [m[39;49m[m[39;49m[K
+[K
+[7m    PID USUARIO   PR  NI    VIRT    RES    SHR S  %CPU  %MEM     HORA+ ORDEN                                                                                                                                                                    [m[39;49m[K
+[m      1 root      20   0   23808  15116   9708 S   0,0   0,1   0:01.66 systemd                                                                                                                                                                  [m[39;49m[K
+[m      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd                                                                                                                                                                 [m[39;49m[K
+[m      3 root      20   0       0      0      0 S   0,0   0,0   0:00.00 pool_workqueue_release                                                                                                                                                   [m[39;49m[K
+[m      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-rcu_gp                                                                                                                                                         [m[39;49m[K
+[m      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-sync_wq                                                                                                                                                        [m[39;49m[K
+[m      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-kvfree_rcu_reclaim                                                                                                                                             [m[39;49m[K
+[m      7 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-slub_flushwq                                                                                                                                                   [m[39;49m[K
+[m      8 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-netns                                                                                                                                                          [m[39;49m[K
+[m     10 root      20   0       0      0      0 I   0,0   0,0   0:00.21 kworker/0:1-events                                                                                                                                                       [m[39;49m[K
+[m     11 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     12 root      20   0       0      0      0 I   0,0   0,0   0:00.45 kworker/u48:0-events_power_efficient                                                                                                                                     [m[39;49m[K
+[m     13 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/R-mm_percpu_wq                                                                                                                                                   [m[39;49m[K
+[m     14 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/0                                                                                                                                                              [m[39;49m[K
+[m     15 root      20   0       0      0      0 I   0,0   0,0   0:00.37 rcu_preempt                                                                                                                                                              [m[39;49m[K
+[m     16 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_exp_par_gp_kthread_worker/0                                                                                                                                          [m[39;49m[K
+[m     17 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_exp_gp_kthread_worker                                                                                                                                                [m[39;49m[K
+[m     18 root      rt   0       0      0      0 S   0,0   0,0   0:00.03 migration/0                                                                                                                                                              [m[39;49m[K
+[m     19 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0                                                                                                                                                            [m[39;49m[K
+[m     20 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0                                                                                                                                                                  [m[39;49m[K
+[m     21 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/1                                                                                                                                                                  [m[39;49m[K
+[m     22 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/1                                                                                                                                                            [m[39;49m[K
+[m     23 root      rt   0       0      0      0 S   0,0   0,0   0:00.22 migration/1                                                                                                                                                              [m[39;49m[K
+[m     24 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/1                                                                                                                                                              [m[39;49m[K
+[m     25 root      20   0       0      0      0 I   0,0   0,0   0:00.10 kworker/1:0-events                                                                                                                                                       [m[39;49m[K
+[m     26 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/1:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     27 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/2                                                                                                                                                                  [m[39;49m[K
+[m     28 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/2                                                                                                                                                            [m[39;49m[K
+[m     29 root      rt   0       0      0      0 S   0,0   0,0   0:00.22 migration/2                                                                                                                                                              [m[39;49m[K
+[m     30 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/2                                                                                                                                                              [m[39;49m[K
+[m     31 root      20   0       0      0      0 I   0,0   0,0   0:00.01 kworker/2:0-events                                                                                                                                                       [m[39;49m[K
+[m     32 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/2:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     33 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/3                                                                                                                                                                  [m[39;49m[K
+[m     34 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/3                                                                                                                                                            [m[39;49m[K
+[m     35 root      rt   0       0      0      0 S   0,0   0,0   0:00.21 migration/3                                                                                                                                                              [m[39;49m[K
+[m     36 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/3                                                                                                                                                              [m[39;49m[K
+[m     38 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/3:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     39 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/4                                                                                                                                                                  [m[39;49m[K
+[m     40 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/4                                                                                                                                                            [m[39;49m[K
+[m     41 root      rt   0       0      0      0 S   0,0   0,0   0:00.26 migration/4                                                                                                                                                              [m[39;49m[K
+[m     42 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/4                                                                                                                                                              [m[39;49m[K
+[m     43 root      20   0       0      0      0 I   0,0   0,0   0:00.60 kworker/4:0-events                                                                                                                                                       [m[39;49m[K
+[m     44 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/4:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     45 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/5                                                                                                                                                                  [m[39;49m[K
+[m     46 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/5                                                                                                                                                            [m[39;49m[K
+[m     47 root      rt   0       0      0      0 S   0,0   0,0   0:00.21 migration/5                                                                                                                                                              [m[39;49m[K
+[m     48 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/5                                                                                                                                                              [m[39;49m[K
+[m     49 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/5:0-events                                                                                                                                                       [m[39;49m[K
+[m     50 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/5:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     51 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/6                                                                                                                                                                  [m[39;49m[K
+[m     52 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/6                                                                                                                                                            [m[39;49m[K
+[m     53 root      rt   0       0      0      0 S   0,0   0,0   0:00.24 migration/6                                                                                                                                                              [m[39;49m[K
+[m     54 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/6                                                                                                                                                              [m[39;49m[K
+[m     56 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/6:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     57 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/7                                                                                                                                                                  [m[39;49m[K
+[m     58 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/7                                                                                                                                                            [m[39;49m[K
+[m     59 root      rt   0       0      0      0 S   0,0   0,0   0:00.22 migration/7                                                                                                                                                              [m[39;49m[K
+[m     60 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ksoftirqd/7                                                                                                                                                              [m[39;49m[K
+[m     62 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/7:0H-events_highpri                                                                                                                                              [m[39;49m[K
+[m     63 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/8                                                                                                                                                                  [m[39;49m[K
+[m     64 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/8                                                                                                                                                            [m[39;49m[K[68;1H
+[?25h[?0c[K[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ who
+[?2004lach      seat0        2026-03-08 15:49 (login screen)
+ach      :1           2026-03-08 15:49 (:1)
+ach      tty3         2026-03-08 15:50
+[?2004hach@ach-Victus-by-HP-Gaming-Laptop-15-fb2xxx:~$ exit
+[?2004lexit
+
+Script terminado en 2026-03-08 15:56:21-06:00 [CÓDIGO_SALIDA_ORDEN="0"]
